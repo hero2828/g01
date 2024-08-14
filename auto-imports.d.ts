@@ -14,6 +14,7 @@ declare global {
   const MathUtils: typeof import('three')['MathUtils']
   const Mesh: typeof import('three')['Mesh']
   const MeshPhongMaterial: typeof import('three')['MeshPhongMaterial']
+  const MeshPhysicalMaterial: typeof import('three')['MeshPhysicalMaterial']
   const OrbitControls: typeof import('three/examples/jsm/Addons.js')['OrbitControls']
   const PerspectiveCamera: typeof import('three')['PerspectiveCamera']
   const PointLight: typeof import('three')['PointLight']

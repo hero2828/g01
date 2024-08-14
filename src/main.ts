@@ -1,4 +1,3 @@
-import { MeshBasicMaterial } from 'three'
 import './scss/index.scss'
 import starUrl from '@/assets/star.png?url'
 
@@ -15,8 +14,9 @@ camera.position.set(100, 100, 100)
 camera.lookAt(scene.position)
 
 const sphereGeometry = new IcosahedronGeometry(20, 1)
-const sphereMaterial = new MeshBasicMaterial({
+const sphereMaterial = new MeshPhysicalMaterial({
   color: 0xFFFFFF * Math.random(),
+  metalness: 1,
 })
 const sphere = new Mesh(sphereGeometry, sphereMaterial)
 
@@ -54,8 +54,8 @@ const particles = new Points(geometry, material)
 scene.add(particles)
 
 const ambientLight = new AmbientLight(0xFFFFFF)
-const pointLight = new PointLight(0xF1F1F1, 1, 0)
-pointLight.position.set(100, 100, 0)
+const pointLight = new PointLight(0xFFFFFF, 1200, 0)
+pointLight.position.set(0, 30, 0)
 const spotLight = new SpotLight(0xFFFFFF, 3, 150, Math.PI / 15, 1, 1)
 spotLight.position.set(50, 100, -80)
 spotLight.castShadow = true
@@ -73,7 +73,8 @@ const control = new OrbitControls(camera, renderer.domElement)
 
 function animate() {
   requestAnimationFrame(animate)
-  planet.rotation.y += 0.01
+  planet.rotation.y += 0.005
+  ringGroup.rotation.z += 0.01
   renderer.render(scene, camera)
 }
 animate()
