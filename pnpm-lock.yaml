@@ -26,6 +26,9 @@ devDependencies:
   three:
     specifier: ^0.167.1
     version: 0.167.1
+  tsl-textures:
+    specifier: ^0.20.0
+    version: 0.20.0
   typescript:
     specifier: ^5.5.3
     version: 5.5.4
@@ -3173,6 +3176,10 @@ packages:
       typescript: '>=4.2.0'
     dependencies:
       typescript: 5.5.4
+    dev: true
+
+  /tsl-textures@0.20.0:
+    resolution: {integrity: sha512-3F1R3g35mCbehDKfDbcmji575se054HZrRcfyzGolWIYjvhxhyj7YptvmDB6LrYYmSsq/d/yWOEYJ72KKjlerQ==}
     dev: true
 
   /tslib@2.6.3:
