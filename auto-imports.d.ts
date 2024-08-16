@@ -6,7 +6,6 @@
 export {}
 declare global {
   const AmbientLight: typeof import('three')['AmbientLight']
-  const AxesHelper: typeof import('three')['AxesHelper']
   const BufferGeometry: typeof import('three')['BufferGeometry']
   const Color: typeof import('three')['Color']
   const Float32BufferAttribute: typeof import('three')['Float32BufferAttribute']
@@ -23,7 +22,6 @@ declare global {
   const PointsMaterial: typeof import('three')['PointsMaterial']
   const RingGeometry: typeof import('three')['RingGeometry']
   const Scene: typeof import('three')['Scene']
-  const ShaderPass: typeof import('three/examples/jsm/Addons.js')['ShaderPass']
   const SpotLight: typeof import('three')['SpotLight']
   const TextureLoader: typeof import('three')['TextureLoader']
   const WebGLRenderer: typeof import('three')['WebGLRenderer']
