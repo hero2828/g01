@@ -17,6 +17,11 @@ export default antfu({
   },
   rules: {
     'format/prettier': ['error', { parser: 'scss', tabWidth: 2 }],
-    'no-console': 'off',
+    'no-console': [
+      'error',
+      {
+        allow: ['log', 'warn'],
+      },
+    ],
   },
 })

@@ -6,6 +6,7 @@
 export {}
 declare global {
   const AmbientLight: typeof import('three')['AmbientLight']
+  const AxesHelper: typeof import('three')['AxesHelper']
   const BufferGeometry: typeof import('three')['BufferGeometry']
   const Color: typeof import('three')['Color']
   const Float32BufferAttribute: typeof import('three')['Float32BufferAttribute']

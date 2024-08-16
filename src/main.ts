@@ -1,7 +1,8 @@
 import './scss/index.scss'
+import { OScene } from './model/abc'
 import starUrl from '@/assets/star.png?url'
 
-const scene = new Scene()
+const scene = new OScene()
 scene.background = new Color(0x040014)
 
 const camera = new PerspectiveCamera(
